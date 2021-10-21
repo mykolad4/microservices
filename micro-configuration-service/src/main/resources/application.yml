@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: micro-configuration-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///home/mykola/Programms/micro-configuration-repo
+

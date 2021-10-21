@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: micro-limits-service
+  profiles:
+    active: dev
+  cloud:
+    config:
+      profile: dev
+  config:
+    import: optional:configserver:http://localhost:8888
+
+limits-service:
+  minimum: 3
+  maximum: 21
